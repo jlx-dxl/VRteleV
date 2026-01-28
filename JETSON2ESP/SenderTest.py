@@ -1,7 +1,7 @@
 import serial
 import time
 
-PORT = "COM5"   # Jetson 示例；Windows 用 COMx
+PORT = "/dev/ttyUSB0"   # Jetson 示例；Windows 用 COMx
 BAUDRATE = 115200
 
 ser = serial.Serial(PORT, BAUDRATE, timeout=1)
